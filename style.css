@@ -74,6 +74,12 @@ a:hover {
     text-decoration: underline;
 }
 
+.nav a.active {
+    color: var(--text);
+    font-weight: 600;
+    pointer-events: none;
+}
+
 .nav {
     margin-bottom: 2rem;
     padding-bottom: 1rem;

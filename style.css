@@ -74,25 +74,38 @@ a:hover {
     text-decoration: underline;
 }
 
-.nav a.active {
-    color: var(--text);
-    font-weight: 600;
-    pointer-events: none;
-}
-
 .nav {
     margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border);
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
 }
 
 .nav .app-name {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--text);
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.nav .tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.nav .tabs a {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s, font-weight 0.2s;
+}
+
+.nav .tabs a.active {
+    color: #c9a84c;
+    font-weight: 600;
+    border-bottom-color: #c9a84c;
+    pointer-events: none;
 }
 
 footer {
